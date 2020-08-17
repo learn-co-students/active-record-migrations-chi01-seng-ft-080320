@@ -1,7 +1,7 @@
-# artist.rb
+# db/migrate/01_create_artists.rb
 
-class Artist < ActiveRecord::Base
-     def change
+class CreateArtists < ActiveRecord::Migration[5.2]
+ def change
     create_table :artists do |t|
       t.string :name
       t.string :genre
